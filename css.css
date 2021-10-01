@@ -19,44 +19,42 @@ hr {
     padding-left: 12%;
     padding-right: 12%;
     color: #28dff7;
-    /* height: 20%; */
 }
 
-#image {
+.image{
+    padding-left: 0%;
+}
+.image img{
     border-radius: 50%;
-    width: 30%;
-    height: 30%;
-    padding: 35px 0 0 15px;
+    width: 35%;
     display: inline-block;
+
 }
 
 .heading {
-    text-align: right;
+    /* text-align: right; */
     color: white;
     padding-right: 200px;
     font-size: 190%;
     display: inline-block;
 }
 
-.heading h1 {
+/* .heading h1 {
     position: relative;
     bottom: 105px;
     left: 320px;
     font-size: 240%;
-}
+} */
 
-.heading h3{
+/* .heading h3{
     position: relative;
     bottom: 107px;
     left: 18px;
-}
+} */
 
 .about {
     color: white;
-    font-size: 30px;
-    position: relative;
-    display: inline-block;
-    width: 100%;
+    font-size: 176%;
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
@@ -109,7 +107,7 @@ hr {
 }
 
 .navbar a {
-    padding: 5px 10px 10px 8px;
+    padding: 10px 10px 12px 8px;
     color: white;
     font-size: 125%;
     /* border: 1px solid #3498db; */
@@ -122,9 +120,9 @@ hr {
     color: #3498db;
 }
 
-.navbar a:active {
+/* .navbar a:active {
     background-color: grey;
-}
+} */
 
 #projects {
     color: white;
@@ -144,7 +142,7 @@ hr {
     height: 200%;
 }
 
-@media only screen and (max-width: 580px){
+/* @media only screen and (max-width: 580px){
 
     #skills img{
         width: 20%;
@@ -154,6 +152,7 @@ hr {
         display: block;
         width: 100%;
         float: center;
+}
 }
 
 @media only screen and (max-width: 609px){
@@ -166,16 +165,17 @@ hr {
     #projects h2{
         font-size: 90%;
     }
-}
-@media only screen and (max-width: 400px){
+} */
+
+@media only screen and (max-width: 572px){
 
     #skills img{
-        width: 23%;
-        height: 23%;
+        width: 21%;
+        height: 21%;
         padding-top: 6%;
     }
     #skills{
-        font-size: 140%;
+        font-size: 148%;
     }
 }
 
@@ -190,3 +190,24 @@ hr {
         
     }
 }
+
+ @media only screen and (max-width: 774px) {
+    
+    .image{
+        padding: 0 0 0 0;
+    }
+    .image img{
+        border-radius: 50%;
+        width: 100%; 
+        display: block;
+    
+    }
+    
+    .heading h1 h3{
+        color: lightblue;
+        padding-right: 200px;
+        font-size: 190%;
+        display: block;
+        padding: 0% 2% 0% 2%;
+    }
+} 
