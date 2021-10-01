@@ -5,11 +5,10 @@ html {
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body {
-    background-image: url("./images/background1.jpg");
+    background-image: url("../images/background.jpg");
     background-color: black;
     font-family: 'Baloo Bhai 2', cursive;
 }
@@ -22,35 +21,36 @@ hr {
 }
 
 .image{
-    padding-left: 0%;
+    width: 35%;
 }
 .image img{
     border-radius: 50%;
-    width: 35%;
+    width: 90%;
     display: inline-block;
-
 }
 
 .heading {
     /* text-align: right; */
     color: white;
-    padding-right: 200px;
     font-size: 190%;
     display: inline-block;
+    width: 65%;
+    position: relative;
+    bottom: 30%;
 }
 
-/* .heading h1 {
+.heading h1{
     position: relative;
-    bottom: 105px;
-    left: 320px;
+    bottom: 30%;
+    left: 60%;
     font-size: 240%;
-} */
+}
 
-/* .heading h3{
+.heading h3{
     position: relative;
-    bottom: 107px;
-    left: 18px;
-} */
+    bottom: 100%;
+    left: 65%;
+}
 
 .about {
     color: white;
@@ -136,36 +136,11 @@ hr {
 
 .end {
     text-align: center;
-    background-image: url("./images/end-background.jpeg");
+    background-image: url("../images/end-background.jpeg");
     color: white;
     width: 100%;
     height: 200%;
 }
-
-/* @media only screen and (max-width: 580px){
-
-    #skills img{
-        width: 20%;
-        height: 20%;
-    }
-    .image{
-        display: block;
-        width: 100%;
-        float: center;
-}
-}
-
-@media only screen and (max-width: 609px){
-    #projects h2{
-       padding-left: 0%; 
-    }
-}
-
-@media only screen and (max-width: 420px){
-    #projects h2{
-        font-size: 90%;
-    }
-} */
 
 @media only screen and (max-width: 572px){
 
@@ -174,6 +149,7 @@ hr {
         height: 21%;
         padding-top: 6%;
     }
+    
     #skills{
         font-size: 148%;
     }
@@ -181,8 +157,8 @@ hr {
 
 @media only screen and (max-width: 774px){
     #contact img{
-        width: 13%;
-        height: 13%;
+        width: 15%;
+        height: 15%;
         padding-top: 7%;
     }
     #contact {
@@ -191,7 +167,7 @@ hr {
     }
 }
 
- @media only screen and (max-width: 774px) {
+ @media only screen and (max-width: 532px) {
     
     .image{
         padding: 0 0 0 0;
@@ -203,11 +179,9 @@ hr {
     
     }
     
-    .heading h1 h3{
-        color: lightblue;
-        padding-right: 200px;
-        font-size: 190%;
+    .heading {
+        font-size: 160%;
         display: block;
-        padding: 0% 2% 0% 2%;
+        padding: 0% 2% 0% 10%;
     }
 } 
