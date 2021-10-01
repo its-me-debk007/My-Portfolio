@@ -5,6 +5,7 @@ html {
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,25 +16,17 @@ body {
 
 hr {
     border-radius: 10px;
-    width: 50%;
+    padding-left: 12%;
+    padding-right: 12%;
+    color: blue;
 }
 
 #image {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 30%;
+    height: 30%;
     padding: 35px 0 0 15px;
     display: inline-block;
-}
-
-
-.icons {
-    width: 50px;
-    height: 50px;
-    /* background-color: black; */
-    color: white;
-    padding-right: 20px;
-    padding-left: 10px;
 }
 
 .heading {
@@ -48,10 +41,13 @@ hr {
     position: relative;
     bottom: 105px;
     left: 320px;
+    font-size: 240%;
 }
 
-#surname {
-    padding-right: 131px;
+.heading h3{
+    position: relative;
+    bottom: 107px;
+    left: 18px;
 }
 
 .about {
@@ -59,16 +55,35 @@ hr {
     font-size: 30px;
     position: relative;
     display: inline-block;
-    width: 65%;
+    width: 100%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .about p {
     position: relative;
 }
 
-.skills {
+#skills {
     color: white;
     font-size: 200%;
+    background-color: #833a18b7;
+    border-radius: 5%;
+    
+}
+
+#skills h2{
+    padding-left: 3%;
+    padding-bottom: 2%;
+}
+
+#skills img{
+    text-decoration: none;
+    width: 15%;
+    height: 15%;
+    padding-right: 20px;
+    padding-left: 10px;
 }
 
 #contact {
@@ -76,6 +91,25 @@ hr {
     background-color: #5a4ab6cc;
     padding: 2px 10px 10px 20px;
     border-radius: 25px;
+    font-size: 160%;
+}
+
+#contact img{
+    text-decoration: none;
+    list-style: none;
+    width: 8%;
+    height: 8%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.contact p a{
+    text-decoration: none;
+}
+
+.contact1 h2{
+    color:white;
+    font-size: 200%;
 }
 
 .navbar {
@@ -87,20 +121,18 @@ hr {
 }
 
 .navbar a {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 5px 10px 10px 8px;
     color: white;
     font-size: 125%;
     /* border: 1px solid #3498db; */
     cursor: pointer;
     transition: 0.5s;
-    list-style: none;
     text-decoration: none;
 }
 
 .navbar a:hover {
     color: #3498db;
-    /* transform: scale(1.5); */
+    transform: scale(1.5);
 }
 
 .navbar a:active {
@@ -110,22 +142,52 @@ hr {
 #projects {
     color: white;
     font-size: 200%;
+    padding-left: 20%;
 }
 
-#contact {
-    color: white;
-    font-size: 200%;
+#projects h2{
+    padding-left: 45%;
 }
 
-#contact p a {
-    text-decoration: none;
-}
 
-#end {
+
+.end {
     text-align: center;
     background-image: url("./images/end-background.jpeg");
     color: white;
     font-family: courier;
     width: 100%;
     height: 200%;
+}
+
+/* .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} */
+
+@media only screen and (max-width: 527px){
+
+    body{
+        background-color: white;
+    }
+    
+    .image{
+        display: none;
+    }
+
+@media only screen and (max-width: 609px){
+    #projects h2{
+       padding-left: 0%; 
+    }
+}
+
+
 }
