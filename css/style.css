@@ -29,28 +29,21 @@ hr {
 }
 
 .heading {
-    /* text-align: right; */
+    font-family: 'Staatliches', cursive;
+    font-size: 220%;
     color: white;
-    font-size: 190%;
-    /* display: inline-block; */
-    /* width: 65%;
-    position: relative;
-    bottom: 30% */
     text-align: right;
     padding-right: 10%;
 }
 
 .heading h1 h3{
-    /* position: relative;
-    bottom: 59%;
-    left: 50%; */
-    font-size: 230%;
     padding-bottom: 10%;
 }
 
 .heading h3{
     padding-right: 23%;
     margin-right: 3%;
+    padding-bottom: 2%;
 }
 
 #about {
@@ -62,8 +55,8 @@ hr {
     padding-top: 5%;
     background-color: #1663d8d2;
     border-radius: 7%;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
 #skills {
@@ -71,8 +64,8 @@ hr {
     font-size: 200%;
     background-color: #833a18b7;
     border-radius: 7%;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 3%;
+    margin-left: 3%;
     padding-left: 5%;
     padding-top: 3%;
     
@@ -142,8 +135,8 @@ hr {
     padding-top: 3%;
     background-color: #6d08b1c4;
     border-radius: 7%;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
 #projects h2{
@@ -152,9 +145,22 @@ hr {
 }
 
 #projects img{
-    width: 40%;
-    padding-right: 5%;
-    border-radius: 2%;
+    width: 35%;
+    padding-left: 30%;
+    padding-bottom: 3%;
+    border-radius: 6%;
+    transition: 0.4s;
+}
+
+#projects img:hover{
+    width: 45%;
+}
+
+.projectName p{
+    padding-left: 20%;
+}
+.projectName p:hover{
+    color: #10e77cef;
 }
 
 .end {
@@ -214,7 +220,6 @@ hr {
         /* display: block; */
         /* padding: 0% 2% 0% 2%; */
         margin-right: 3%;
-        
         float: center;
     }
 } 
@@ -234,8 +239,18 @@ hr {
     }
 
     #projects{
+        text-align: center; 
+    }
+
+    .projectName p{
+        padding-left: 0%;
         text-align: center;
-        
+        float: center; 
+    }
+
+    #projects img:hover{
+        width: 68%;
+        padding-right: 3%;
     }
 
 }
